@@ -1,4 +1,4 @@
-package org.jet.ch;
+package org.jet.ch.function;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
@@ -7,7 +7,7 @@ public class Md5Function implements HashingFunction {
 
     private final MessageDigest instance;
 
-    Md5Function() throws NoSuchAlgorithmException {
+    public Md5Function() throws NoSuchAlgorithmException {
         this.instance = MessageDigest.getInstance("MD5");
     }
 

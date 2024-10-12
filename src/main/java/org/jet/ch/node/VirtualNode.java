@@ -1,5 +1,11 @@
-package org.jet.ch;
+package org.jet.ch.node;
 
+import org.jet.ch.function.HashingFunction;
+import org.jet.ch.ring.HashRing;
+
+/**
+ * Represents a Virtual Server Node on the {@link HashRing}
+ */
 public class VirtualNode implements ServerNode {
     private final ServerNode physicalNode;
     private final int replicaIndex;
